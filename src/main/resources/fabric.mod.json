@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "firstmod",
+	"version": "${version}",
+	"name": "First Mod",
+	"description": "Work or Crash?",
+	"authors": [
+		"LoveHardCore"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "MIT",
+	"icon": "assets/firstmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.lovehardcore.firstmod.FirstMod"
+		],
+		"fabric-datagen": [
+			"net.lovehardcore.firstmod.FirstModDataGenerator"
+		],
+		"client": [
+			"net.lovehardcore.firstmod.FirstModClient"
+		]
+	},
+	"mixins": [
+		"firstmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
